@@ -15,3 +15,7 @@ def like_food(person,food)
     fave_foods.include? food
 
 end
+
+def add_friend!(person, friend)
+  person[:friends].push friend
+end

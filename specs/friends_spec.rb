@@ -92,6 +92,11 @@ class TestFriends < MiniTest::Test
   # (e.g. the function likes_to_eat(@person3, "stew") should return true, likes_to_eat(@person3, "spinach") should return false)
 
   # 4. For a given person, add a new name to their list of friends
+def test_add_friend
+  add_friend!(@person5,"Daniel")
+  assert_equal(["Daniel"],@person5[:friends])
+end
+
   # (e.g. the function add_friend(@person2, "Darren") should add Darren to the friends.)
   # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
 
